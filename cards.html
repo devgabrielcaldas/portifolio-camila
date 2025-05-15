@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camila Ventura | Cards Redes</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- TOPO COM LOGO E MENU -->
+  <header class="topo-unq">
+    <h1>Camila Ventura</h1>
+    <nav class="menu">
+      <a href="index.html">Bem vindos</a>
+      <a href="unq.html">UNQ</a>
+      <a href="oab.html">OAB/DF mídia off</a>
+      <a href="cards.html" class="active">Cards redes</a>
+      <a href="midia.html" class="active">Mídia offline</a>
+      <a href="sobre.html" class="active">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- GALERIA DE IMAGENS -->
+  <section class="galeria">
+    <img src="assets/img/cards1.png" alt="Card 1" />
+    <img src="assets/img/cards2.png" alt="Card 2" />
+    <img src="assets/img/cards3.jpg" alt="Card 3" />
+    <img src="assets/img/cards4.jpeg" alt="Card 4" />
+    <img src="assets/img/cards5.jpg" alt="Card 5" />
+    <img src="assets/img/cards6.png" alt="Card 6" />
+    <img src="assets/img/cards7.png" alt="Card 7" />
+    <img src="assets/img/cards8.jpg" alt="Card 8" />
+    <img src="assets/img/cards9.png" alt="Card 9" />
+    <img src="assets/img/cards10.png" alt="Card 10" />
+    <img src="assets/img/cards11.png" alt="Card 11" />
+    <img src="assets/img/cards12.png" alt="Card 12" />
+    <img src="assets/img/cards13.png" alt="Card 13" />
+    <img src="assets/img/cards14.png" alt="Card 14" />
+    <img src="assets/img/cards15.png" alt="Card 15" />
+    <!-- Adicione mais imagens conforme necessário -->
+  </section>
+
+  <!-- WHATSAPP FIXO -->
+  <a href="https://wa.me/5561995198740?text=Olá%2C+gostaria+de+saber+mais+sobre+seu+portfólio." class="whatsapp-button" target="_blank">
+    <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Transição de páginas -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a[href$='.html']");
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const url = this.href;
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = url;
+          }, 400);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camila Ventura | OAB/DF Mídia Off</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- TOPO COM LOGO E MENU -->
+  <header class="topo-unq">
+    <h1>Camila Ventura</h1>
+    <nav class="menu">
+      <a href="index.html">Bem vindos</a>
+      <a href="unq.html">UNQ</a>
+      <a href="oab.html" class="active">OAB/DF mídia off</a>
+      <a href="cards.html" class="active">Cards redes</a>
+      <a href="midia.html" class="active">Mídia offline</a>
+      <a href="sobre.html" class="active">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- GALERIA DE IMAGENS -->
+  <section class="galeria">
+    <img src="assets/img/oab1.jpeg" alt="OAB Mídia Off 1" />
+    <img src="assets/img/oab2.jpeg" alt="OAB Mídia Off 2" />
+    <img src="assets/img/oab3.jpeg" alt="OAB Mídia Off 3" />
+    <img src="assets/img/oab4.jpeg" alt="OAB Mídia Off 4" />
+    <img src="assets/img/oab5.jpeg" alt="OAB Mídia Off 5" />
+    <img src="assets/img/oab6.jpeg" alt="OAB Mídia Off 6" />
+    <img src="assets/img/oab7.jpg" alt="OAB Mídia Off 7" />
+    <img src="assets/img/oab8.jpeg" alt="OAB Mídia Off 8" />
+    <img src="assets/img/oab9.jpg" alt="OAB Mídia Off 9" />
+    <img src="assets/img/oab10.jpg" alt="OAB Mídia Off 10" />
+    <img src="assets/img/oab11.png" alt="OAB Mídia Off 11" />
+    <img src="assets/img/oab12.png" alt="OAB Mídia Off 12" />
+    <img src="assets/img/oab13.jpg" alt="OAB Mídia Off 13" />
+    <img src="assets/img/oab14.png" alt="OAB Mídia Off 14" />
+    <img src="assets/img/oab15.jpg" alt="OAB Mídia Off 15" />
+    <img src="assets/img/oab16.jpg" alt="OAB Mídia Off 16" />
+    <img src="assets/img/oab17.png" alt="OAB Mídia Off 17" />
+  </section>
+
+  <!-- WHATSAPP FIXO -->
+  <a href="https://wa.me/5561995198740?text=Olá%2C+gostaria+de+saber+mais+sobre+seu+portfólio." class="whatsapp-button" target="_blank">
+    <img src="assets/img/whatsapp-icon-white.png" alt="WhatsApp" />
+  </a>
+
+  <script>
+  // Aguarda o DOM carregar para aplicar a transição
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a[href$='.html']");
+
+    links.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const url = this.href;
+
+        // Aplica a classe de fade-out
+        document.body.classList.add("fade-out");
+
+        // Aguarda a transição e redireciona
+        setTimeout(() => {
+          window.location.href = url;
+        }, 400); // Tempo um pouco menor que o CSS (0.5s) pra suavizar
+      });
+    });
+  });
+</script>
+</body>
+</html>

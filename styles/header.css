@@ -1,0 +1,29 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1c1c1c;
+  color: #00d9ff;
+  border-bottom: 2px solid #00d9ff;
+}
+
+body.light .site-header {
+  background-color: #ffffff;
+  color: #222;
+  border-bottom: 2px solid #0077cc;
+}
+
+#toggleTheme {
+  padding: 8px 16px;
+  background-color: #00d9ff;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#toggleTheme:hover {
+  transform: scale(1.05);
+}

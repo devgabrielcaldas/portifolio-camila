@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camila Ventura | Sobre</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- TOPO COM LOGO E MENU -->
+  <header class="topo-unq">
+    <h1>Camila Ventura</h1>
+    <nav class="menu">
+      <a href="index.html">Bem vindos</a>
+      <a href="unq.html">UNQ</a>
+      <a href="oab.html">OAB/DF mídia off</a>
+      <a href="cards.html">Cards redes</a>
+      <a href="midia.html">Mídia offline</a>
+      <a href="sobre.html" class="active">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO SOBRE -->
+  <section class="sobre-container">
+    <div class="sobre-texto">
+      <h2>Sobre</h2>
+      <p>Sou designer gráfico na OAB/DF, onde desenvolvo artes criativas para redes sociais e mídias offline. Com um olhar atento para as necessidades de comunicação visual, busco sempre criar designs que transmitam a mensagem de forma clara, impactante e alinhada com os valores da instituição.</p>
+
+      <p>Sou uma pessoa proativa, criativa e comunicativa, sempre aberta a novos desafios e disposta a aprender. Valorizo o trabalho em equipe e acredito que a colaboração é essencial para o sucesso de qualquer projeto. Estou sempre em busca de oportunidades para aprimorar minhas habilidades e explorar novas técnicas, com o objetivo de entregar designs inovadores e eficazes.</p>
+    </div>
+    <div class="sobre-foto">
+      <img src="assets/img/camila.jpg" alt="Camila Ventura" />
+    </div>
+  </section>
+
+  <!-- WHATSAPP FIXO -->
+  <a href="https://wa.me/5561995198740?text=Olá%2C+gostaria+de+saber+mais+sobre+seu+portfólio." class="whatsapp-button" target="_blank">
+    <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Transição suave entre páginas -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a[href$='.html']");
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const url = this.href;
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = url;
+          }, 400);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
