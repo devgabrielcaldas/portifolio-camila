@@ -277,3 +277,23 @@ body.fade-out {
     padding: 25px;
   }
 }
+/* AJUSTE PARA TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 1.05rem;
+    padding-bottom: 6px;
+  }
+
+  .topo-unq h1,
+  .topo h1 {
+    font-size: 2.3rem;
+    letter-spacing: 8px;
+  }
+}
